@@ -21,13 +21,16 @@ import {
 } from "../../EntryFile/imagePath";
 import { Link, NavLink } from "react-router-dom";
 import FeatherIcon from "feather-icons-react";
-const Header = () => {
+const Header = ({ updatePath }) => {
   const sidebarOverlay = () => {
     document.querySelector(".main-wrapper").classList.toggle("slide-nav");
     document.querySelector(".sidebar-overlay").classList.toggle("opened");
     document.querySelector("html").classList.toggle("menu-opened");
   };
 
+  const handleProfile = () => {
+    updatePath("/profile");
+  };
   return (
     <div>
       <div className="header">
@@ -55,33 +58,7 @@ const Header = () => {
         {/* Header Menu */}
         <ul className="nav user-menu">
           {/* Search */}
-          <li className="nav-item nav-searchinputs ">
-            <div className="top-nav-search">
-              <Link to="#" className="responsive-search">
-                <i className="fa fa-search" />
-              </Link>
-              <form action="#">
-                <div className="searchinputs d-none">
-                  <input type="text" placeholder="Search" />
-                  <div className="search-addon">
-                    <span>
-                      {/* <i data-feather="search" className="feather-14" /> */}
-                      <FeatherIcon icon="search" className="feather-14" />
-                    </span>
-                  </div>
-                </div>
-                {/* <Link class="btn"  id="searchdiv"><img src={HeaderSearch} alt="img"/></Link> */}
-              </form>
-            </div>
-          </li>
-
-          <li className="nav-item nav-item-box">
-            <Link to="/dream-pos/application/email">
-              {/* <i data-feather="mail" /> */}
-              <FeatherIcon icon="mail" />
-              <span className="badge rounded-pill">1</span>
-            </Link>
-          </li>
+          <li className="nav-item nav-searchinputs "></li>
 
           {/* Notifications */}
           <li className="nav-item dropdown nav-item-box">
@@ -266,9 +243,9 @@ const Header = () => {
                   </div>
                 </div>
                 <hr className="m-0" />
-                <Link className="dropdown-item" to="/user-profile">
+                <a className="dropdown-item" onClick={handleProfile}>
                   <i className="me-2" data-feather="user" /> My Profile
-                </Link>
+                </a>
 
                 <Link
                   className="dropdown-item"

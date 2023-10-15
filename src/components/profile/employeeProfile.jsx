@@ -13,7 +13,7 @@ const EmployeeProfile = () => {
           <div className="page-header">
             <div className="page-title">
               <h4>Profile</h4>
-              <h6>User Profile</h6>
+              <h6>Admin Profile</h6>
             </div>
           </div>
           {/* /product list */}
@@ -59,7 +59,11 @@ const EmployeeProfile = () => {
                 <div className="col-lg-6 col-sm-12">
                   <div className="form-group">
                     <label>Email</label>
-                    <input type="text" placeholder="william@example.com" />
+                    <input
+                      type="text"
+                      placeholder="william@example.com"
+                      disabled
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 col-sm-12">

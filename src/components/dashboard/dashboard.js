@@ -172,6 +172,19 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
+
+            <div className="col-lg-3 col-sm-6 col-12 d-flex">
+              <div className="dash-count das3">
+                <div className="dash-counts">
+                  <h4>105</h4>
+                  <h5>Products Sold</h5>
+                </div>
+                <div className="dash-imgs">
+                  <FeatherIcon icon="file" />
+                </div>
+              </div>
+            </div>
+
             {/* <div className="col-lg-3 col-sm-6 col-12">
               <div className="dash-widget dash3">
                 <div className="dash-widgetimg">
@@ -209,28 +222,6 @@ const Dashboard = () => {
                 </div>
                 <div className="dash-imgs">
                   <FeatherIcon icon="user-check" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 col-12 d-flex">
-              <div className="dash-count das2">
-                <div className="dash-counts">
-                  <h4>100</h4>
-                  <h5>Purchase Invoice</h5>
-                </div>
-                <div className="dash-imgs">
-                  <FeatherIcon icon="file-text" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 col-12 d-flex">
-              <div className="dash-count das3">
-                <div className="dash-counts">
-                  <h4>105</h4>
-                  <h5>Sales Invoice</h5>
-                </div>
-                <div className="dash-imgs">
-                  <FeatherIcon icon="file" />
                 </div>
               </div>
             </div>

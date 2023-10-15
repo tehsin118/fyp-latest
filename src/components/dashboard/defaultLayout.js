@@ -13,16 +13,24 @@ import StoreList from "../store/StoreList";
 import SalesList from "../sales/saleslist";
 import UserList from "../people/UserList";
 import SalesR from "../report/sales";
+import EmployeeProfile from "../profile/employeeProfile";
+import { toast } from "react-toastify";
 const DefaultLayout = () => {
   const [path, setPath] = useState("dashboard");
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/pos");
+    // navigate("/pos");
+    toast.warn("Coming Soon");
   };
+  const updatePath = () => {
+    setPath("profile");
+  };
+  console.log("mypath", path);
+
   return (
     <div className="main-wrapper">
-      <Header />
+      <Header updatePath={updatePath} />
 
       <div className="sidebar " id="sidebar">
         <Scrollbars>
@@ -237,6 +245,7 @@ const DefaultLayout = () => {
       <div>{path == "salesreport" ? <SalesR /> : <></>}</div>
       {/*  <div>{path == "settings" ? <EmailSettings /> : <></>}</div>
         <div>{path == "taxreport" ? <Taxrates /> : <></>}</div> */}
+      <div>{path == "profile" ? <EmployeeProfile /> : <></>}</div>
     </div>
   );
 };
