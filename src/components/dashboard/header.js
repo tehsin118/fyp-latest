@@ -42,18 +42,13 @@ const Header = ({ updatePath }) => {
           </NavLink>
         </div>
         {/* /Logo */}
-        <Link
-          id="mobile_btn"
-          className="mobile_btn"
-          to="#"
-          onClick={sidebarOverlay}
-        >
+        <a id="mobile_btn" className="mobile_btn" onClick={sidebarOverlay}>
           <span className="bar-icon">
             <span />
             <span />
             <span />
           </span>
-        </Link>
+        </a>
 
         {/* Header Menu */}
         <ul className="nav user-menu">
@@ -207,12 +202,6 @@ const Header = ({ updatePath }) => {
             </div>
           </li>
           {/* /Notifications */}
-
-          <li className="nav-item nav-item-box">
-            <Link to="/dream-pos/settings/generalsettings">
-              <FeatherIcon icon="settings" />
-            </Link>
-          </li>
 
           <li className="nav-item dropdown has-arrow main-drop">
             <Link
