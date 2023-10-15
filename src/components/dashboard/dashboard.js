@@ -179,6 +179,7 @@ const Dashboard = () => {
                   <h4>105</h4>
                   <h5>Products Sold</h5>
                 </div>
+
                 <div className="dash-imgs">
                   <FeatherIcon icon="file" />
                 </div>

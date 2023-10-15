@@ -8,7 +8,6 @@ import ForgetPass from "./page/account/forgetPass";
 import DefaultLayout from "./components/dashboard/defaultLayout";
 import EmployeeProfile from "./components/profile/employeeProfile";
 
-// import Dashboard from "./components/dashboard/asidebar";
 function App() {
   return (
     <div className="App">
