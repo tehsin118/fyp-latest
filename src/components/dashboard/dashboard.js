@@ -128,16 +128,15 @@ const Dashboard = () => {
                 </div>
                 <div className="dash-widgetcontent">
                   <h5>
-                    $
                     <span className="counters">
-                      <CountUp end={307144} />
+                      <CountUp end={200} />
                     </span>
                   </h5>
-                  <h6>Total Purchase Due</h6>
+                  <h6>Total Products</h6>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 col-12">
+            {/* <div className="col-lg-3 col-sm-6 col-12">
               <div className="dash-widget dash1">
                 <div className="dash-widgetimg">
                   <span>
@@ -154,7 +153,7 @@ const Dashboard = () => {
                   <h6>Total Sales Due</h6>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-3 col-sm-6 col-12">
               <div className="dash-widget dash2">
                 <div className="dash-widgetimg">
@@ -173,7 +172,7 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 col-12">
+            {/* <div className="col-lg-3 col-sm-6 col-12">
               <div className="dash-widget dash3">
                 <div className="dash-widgetimg">
                   <span>
@@ -190,8 +189,8 @@ const Dashboard = () => {
                   <h6>Total Sale Amount</h6>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 col-12 d-flex">
+            </div> */}
+            {/* <div className="col-lg-3 col-sm-6 col-12 d-flex">
               <div className="dash-count">
                 <div className="dash-counts">
                   <h4>100</h4>
@@ -201,12 +200,12 @@ const Dashboard = () => {
                   <FeatherIcon icon="user" />
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-3 col-sm-6 col-12 d-flex">
               <div className="dash-count das1">
                 <div className="dash-counts">
                   <h4>100</h4>
-                  <h5>Suppliers</h5>
+                  <h5>Salesman</h5>
                 </div>
                 <div className="dash-imgs">
                   <FeatherIcon icon="user-check" />
